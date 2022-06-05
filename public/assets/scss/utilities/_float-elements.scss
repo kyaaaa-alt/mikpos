@@ -1,0 +1,57 @@
+.float-start {
+	float: left !important;
+}
+.float-end {
+	float: right !important;
+}
+.float-none {
+	float: none !important;
+}
+@media (min-width: 576px) {
+	.float-sm-start {
+		float: left !important;
+	}
+	.float-sm-end {
+		float: right !important;
+	}
+	.float-sm-none {
+		float: none !important;
+	}
+}
+@media (min-width: 768px) {
+	.float-md-start {
+		float: left !important;
+	}
+	.float-md-end {
+		float: right !important;
+	}
+	.float-md-none {
+		float: none !important;
+	}
+}
+@media (min-width: 992px) {
+	.float-lg-start {
+		float: left !important;
+	}
+	.float-lg-end {
+		float: right !important;
+	}
+	.float-lg-none {
+		float: none !important;
+	}
+}
+@media (min-width: 1280px) {
+	.float-xl-start {
+		float: left !important;
+	}
+	.float-xl-end {
+		float: right !important;
+	}
+	.float-xl-none {
+		float: none !important;
+	}
+}
+.floating {
+	animation: floating 3s ease infinite;
+	will-change: transform;
+}

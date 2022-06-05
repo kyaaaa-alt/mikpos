@@ -1,0 +1,389 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+/*
+ *  Owl Carousel - Core
+ */
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+
+    .owl-stage {
+        position: relative;
+        -ms-touch-action: pan-Y;
+        touch-action: manipulation;
+        -moz-backface-visibility: hidden;
+
+        /* fix firefox animation glitch */
+
+        &:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+    }
+
+    .owl-stage-outer {
+        position: relative;
+        overflow: hidden;
+
+        /* fix for flashing background */
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    .owl-wrapper {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+    }
+
+    .owl-item {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        position: relative;
+        min-height: 1px;
+        float: left;
+        -webkit-backface-visibility: hidden;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+
+        img {
+            display: block;
+        }
+    }
+
+    .owl-nav.disabled,
+    .owl-dots.disabled {
+        display: none;
+    }
+
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            cursor: pointer;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+
+    .owl-dot {
+        cursor: pointer;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .owl-nav button {
+        &.owl-prev,
+        &.owl-next {
+            background: rgba(105, 99, 255, 0.3);
+            opacity: 7;
+            color: inherit;
+            border: none;
+            padding: 0 !important;
+            font: inherit;
+        }
+    }
+
+    button.owl-dot {
+        background: rgba(105, 99, 255, 0.3);
+        opacity: 7;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+    }
+
+    &.owl-loaded {
+        display: block;
+    }
+
+    &.owl-loading {
+        opacity: 0;
+        display: block;
+    }
+
+    &.owl-hidden {
+        opacity: 0;
+    }
+
+    &.owl-refresh .owl-item {
+        visibility: hidden;
+    }
+
+    &.owl-drag .owl-item {
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    &.owl-grab {
+        cursor: move;
+        cursor: grab;
+    }
+
+    &.owl-rtl {
+        direction: rtl;
+
+        .owl-item {
+            float: right;
+        }
+    }
+}
+
+/* No Js */
+
+.no-js .owl-carousel {
+    display: block;
+}
+
+/*
+   *  Owl Carousel - Animate Plugin
+   */
+
+.owl-carousel {
+    .animated {
+        animation-duration: 1000ms;
+        animation-fill-mode: both;
+    }
+
+    .owl-animated-in {
+        z-index: 0;
+    }
+
+    .owl-animated-out {
+        z-index: 1;
+    }
+
+    .fadeOut {
+        animation-name: fadeOut;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*
+   * 	Owl Carousel - Auto Height Plugin
+   */
+
+.owl-height {
+    transition: height 500ms ease-in-out;
+}
+
+/*
+   * 	Owl Carousel - Lazy Load Plugin
+   */
+
+.owl-carousel {
+    .owl-item {
+        .owl-lazy {
+            opacity: 0;
+            transition: opacity 400ms ease;
+
+            &[src^=""],
+            &:not([src]) {
+                max-height: 0;
+            }
+        }
+
+        img.owl-lazy {
+            transform-style: preserve-3d;
+        }
+    }
+
+    .owl-video-wrapper {
+        position: relative;
+        height: 100%;
+        background: #000;
+    }
+
+    .owl-video-play-icon {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        cursor: pointer;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+        transition: transform 100ms ease;
+
+        &:hover {
+            -ms-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+        }
+    }
+
+    .owl-video-playing {
+        .owl-video-tn,
+        .owl-video-play-icon {
+            display: none;
+        }
+    }
+
+    .owl-video-tn {
+        opacity: 0;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: opacity 400ms ease;
+    }
+
+    .owl-video-frame {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/*
+   * 	Owl Carousel - Video Plugin
+   */
+
+.owl-controls {
+    .owl-page {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: 4px solid #d9d6e0;
+        background-size: cover;
+        transition: all 0.3s ease-in-out 0s;
+
+        &:nth-child(2) {
+            background-size: cover;
+        }
+
+        &:nth-child(3) {
+            background-size: cover;
+        }
+    }
+
+    &.clickable .owl-page:hover {
+        opacity: 0.5;
+    }
+
+    .owl-page {
+        &.active {
+            border-color: #ed5151;
+            opacity: 1;
+
+            &:hover {
+                border-color: #ed5151;
+                opacity: 1;
+            }
+        }
+
+        display: inline-block;
+        zoom: 1;
+    }
+
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonia {
+    .post {
+        display: block;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: capitalize;
+        margin: 0;
+        margin-bottom: 1px;
+    }
+}
+
+.owl-nav {
+    .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        right: -1.5em;
+        margin-top: -1.65em;
+    }
+
+    button {
+        display: block;
+        font-size: 1.3rem !important;
+        line-height: 2em;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5) !important;
+        border: 1px solid #e8ebf3 !important;
+        z-index: 99;
+        box-shadow: 0 4px 15px rgb(67 67 67 / 15%);
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #2098d1;
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        right: -25px;
+        margin-top: -1.65em;
+    }
+}

@@ -1,0 +1,30 @@
+/*---------Thumbnails----------*/
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	background-color: $white;
+	border: 1px solid $border;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+	border-radius: 7px;
+	a>img, >img {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.thumbimg {
+	height: 100%;
+	width: 100%;
+	display: block;
+	border-radius: 7px;
+}
+.thumbnail .caption {
+	padding: 15px;
+}

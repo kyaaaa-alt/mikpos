@@ -1,0 +1,136 @@
+/*------ Breadcrumb ------*/
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style: none;
+    border-radius: 3px;
+    right: 0;
+    padding: 0;
+    color: $white;
+    background: none;
+}
+
+.breadcrumb-item {
+    a {
+        color: #76839a;
+    }
+    +.breadcrumb-item {
+        &::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            color: rgba(110, 126, 150, 0.4);
+            content: "/";
+        }
+        &:hover::before {
+            text-decoration: underline;
+            text-decoration: none;
+        }
+    }
+}
+
+.breadcrumb-style2 {
+    .breadcrumb-item1 {
+        +.breadcrumb-item1 {
+            &::before {
+                content: "\e92f";
+                font-family: feather!important;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.breadcrumb-style3 {
+    .breadcrumb-item1 {
+        +.breadcrumb-item1 {
+            &::before {
+                content: "\e933";
+                font-family: feather!important;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.breadcrumb1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.breadcrumb-item1 {
+    a:hover {
+        color: $primary-1;
+        text-decoration: underline;
+    }
+    +.breadcrumb-item1 {
+        &::before {
+            display: inline-block;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            content: "/";
+            color: #c0c9da;
+        }
+        &:hover::before {
+            text-decoration: underline;
+            text-decoration: none;
+        }
+    }
+    &.active {
+        color: $default-color;
+    }
+}
+
+.breadcrumb-3 {
+    ol {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    li {
+        display: contents;
+        text-align: center;
+    }
+}
+
+.breadcrumb-4 li,
+.breadcrumb-5 li {
+    display: contents;
+    text-align: center;
+}
+
+.breadcrumb-4 ol,
+.breadcrumb-5 ol {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.breadcrumb-1 li,
+.breadcrumb-2 li,
+.breadcrumb-6 li {
+    text-align: right;
+    display: contents;
+}
+
+.breadcrumb-1 ol,
+.breadcrumb-2 ol,
+.breadcrumb-6 ol {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.breadcrumb-item {
+    display: -ms-flexbox;
+    display: block !important;
+}

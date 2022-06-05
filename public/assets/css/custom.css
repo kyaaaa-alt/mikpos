@@ -1,0 +1,108 @@
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .lmenu {
+        display:none !important;
+    }
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 3px 10px; /* e.g. change 8x to 4px here */
+    }
+    .blok2 {
+        margin-bottom: 5px;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 601px) {
+    .blok1 {
+        display:none !important;
+    }
+}
+
+.warningloader {
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    20% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    0% {
+        opacity:0;
+    }
+    20% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    0% {
+        opacity:0;
+    }
+    20% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 601px) {
+
+}
+
+body {
+overflow: -moz-scrollbars-none;
+-ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+#delselbutton, #delcombutton {
+    display: none;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 1px 10px;
+}
+.tabelcustom tbody td {
+    line-height: 0px;
+    min-height: 0px;
+    height: 1px;
+}
+
+.table > tbody > tr > td > span {
+    font-size: 12px;
+}
+
+.pull-left{float:left!important;}
+.pull-right{float:right!important;}

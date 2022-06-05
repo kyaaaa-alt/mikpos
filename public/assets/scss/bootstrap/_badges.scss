@@ -1,0 +1,35 @@
+/*-----Badges-----*/
+
+.btn .badge {
+    position: relative;
+    top: -1px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 5px 4px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 3px;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+}
+
+.badgetext {
+    float: right;
+}
+
+.btn-custom {
+    background: #f6f6fb;
+    color: #76839a;
+}
+
+.badge.badge-sm {
+    padding: 3px 8px 5px 8px;
+}

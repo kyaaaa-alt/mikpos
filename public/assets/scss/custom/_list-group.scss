@@ -1,0 +1,377 @@
+/*-----Lists-----*/
+
+.list-group-item.active {
+    z-index: 2;
+    background-color: $primary-01;
+    color: $default-color;
+    border-color: $border;
+}
+
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-group-item-action {
+    width: 100%;
+    color: #76839a;
+    text-align: inherit;
+    &:hover,
+    &:focus {
+        color: #76839a;
+        text-decoration: none;
+        background-color: $primary-01;
+    }
+    &:active {
+        color: #76839a;
+        background-color: $primary-01;
+    }
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: $white;
+    border: 1px solid $border;
+}
+
+.listorder {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: $white;
+    border: 1px solid $border;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.listorder1 {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: $white;
+    border: 1px solid $border;
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+}
+
+.listunorder {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: $white;
+    border: 1px solid $border;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.listunorder1 {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: $white;
+    border: 1px solid $border;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.list-group-item {
+    &:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    &:hover,
+    &:focus {
+        z-index: 1;
+        text-decoration: none;
+    }
+    &.disabled,
+    &:disabled {
+        color: #c6cad8;
+        background-color: $white;
+    }
+}
+
+.list-group-item-primary {
+    color: #24426c;
+    background-color: #cbdbf2;
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: #24426c;
+            background-color: #b7cded;
+        }
+        &.active {
+            color: $white;
+            background-color: #24426c;
+            border-color: #24426c;
+        }
+    }
+}
+
+.list-group-item-secondary {
+    color: #464a4e;
+    background-color: #dddfe2;
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: #464a4e;
+            background-color: #cfd2d6;
+        }
+        &.active {
+            color: $white;
+            background-color: #464a4e;
+            border-color: #464a4e;
+        }
+    }
+}
+
+.list-group-item-success {
+    color: $success;
+    background-color: rgba(9, 173, 149, .2);
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: $success;
+            background-color: rgba(9, 173, 149, .2);
+        }
+        &.active {
+            color: $white;
+            background-color: $success;
+            border-color: $success;
+        }
+    }
+}
+
+.list-group-item-info {
+    color: $info;
+    background-color: rgba(17, 112, 228, .2);
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: $info;
+            background-color: rgba(17, 112, 228, .2);
+        }
+        &.active {
+            color: $white;
+            background-color: rgba(17, 112, 228, .2);
+            border-color: rgba(17, 112, 228, .2);
+        }
+    }
+}
+
+.list-group-item-warning {
+    color: $warning;
+    background-color: rgba(247, 183, 49, .2);
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: $warning;
+            background-color: rgba(247, 183, 49, .2);
+        }
+        &.active {
+            color: $white;
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+}
+
+.list-group-item-danger {
+    color: $danger;
+    background-color: rgba(232, 38, 70, .2);
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: $danger;
+            background-color: rgba(232, 38, 70, .2);
+        }
+        &.active {
+            color: $white;
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+}
+
+.list-group-item-light {
+    color: #818182;
+    background-color: #fdfdfe;
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: #818182;
+            background-color: #ececf6;
+        }
+        &.active {
+            color: $white;
+            background-color: #818182;
+            border-color: #818182;
+        }
+    }
+}
+
+.list-group-item-dark {
+    color: #1b1e21;
+    background-color: #c6c8ca;
+    &.list-group-item-action {
+        &:hover,
+        &:focus {
+            color: #1b1e21;
+            background-color: #b9bbbe;
+        }
+        &.active {
+            color: $white;
+            background-color: #1b1e21;
+            border-color: #1b1e21;
+        }
+    }
+}
+
+.list-group-item {
+    &.active .icon {
+        color: inherit !important;
+    }
+    .icon {
+        color: #74829c!important;
+    }
+}
+
+.list-group-transparent .list-group-item {
+    background: none;
+    border: 0;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    &.active {
+        background: $primary-01;
+        font-weight: 500;
+        color: $black;
+    }
+}
+
+.list-group-transparent.file-manager .list-group-item {
+    // border: 1px solid $border;
+    border-top: 0;
+}
+
+.list-group.lg-alt .list-group-item {
+    border: 0;
+}
+
+.list.d-flex img {
+    width: 60px;
+}
+
+.order-list li {
+    line-height: 30px;
+}
+
+.list-style-1 {
+    list-style: inherit;
+    padding-left: inherit;
+}
+
+.list-style-1 li {
+    line-height: 30px;
+}
+
+.list-style-1 li {
+    line-height: 30px;
+}
+
+.list-style-1 ul {
+    list-style: inherit;
+    padding-left: 30px;
+}
+
+.list-style2 {
+    list-style: decimal;
+    padding-left: inherit;
+}
+
+.list-style2 li {
+    line-height: 30px;
+}
+
+.list-style2 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.list-style3 {
+    list-style: circle !important;
+    padding-left: inherit;
+}
+
+.list-style3 li {
+    line-height: 30px;
+}
+
+.list-style3 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.list-style4 {
+    list-style: lower-alpha;
+    padding-left: inherit;
+}
+
+.list-style4 li {
+    line-height: 30px;
+}
+
+.list-style4 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.list-style4 li {
+    line-height: 30px;
+}
+
+.list-style5 {
+    list-style: square;
+    padding-left: inherit;
+}
+
+.list-style5 li {
+    line-height: 30px;
+}
+
+.list-style5 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.list-style6 {
+    list-style: lower-roman;
+    padding-left: inherit;
+}
+
+.list-style6 li {
+    line-height: 30px;
+}
+
+list-style6 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.list-style6 ul {
+    list-style: decimal;
+    padding-left: 30px;
+}
+.list-group-item a{
+    color: $default-color;
+}

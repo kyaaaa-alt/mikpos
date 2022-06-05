@@ -1,0 +1,104 @@
+/*------ Media object ------*/
+
+.media {
+    zoom: 1;
+    overflow: hidden;
+}
+
+.media-body {
+    zoom: 1;
+    overflow: hidden;
+    width: auto;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.media-object {
+    display: block;
+}
+
+.media img {
+    width: 40px;
+    height: 40px;
+}
+
+.media-right,
+.media>.pull-right {
+    padding-left: 10px;
+}
+
+.media-body,
+.media-left,
+.media-right {
+    display: block;
+    vertical-align: top;
+}
+
+.media-left,
+.media>.pull-left {
+    padding-right: 10px;
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.media-body h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.media-middle {
+    vertical-align: middle;
+}
+
+.media-bottom {
+    vertical-align: bottom;
+}
+
+.media-icon {
+    width: 3rem;
+    height: 3rem;
+    line-height: 4;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.media-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.btn-close {
+    float: right;
+    font-size: 1.40625rem;
+    font-weight: 700;
+    line-height: 1;
+    color: $black;
+    text-shadow: none;
+    opacity: .5;
+    transition: .3s color;
+    &:hover,
+    &:focus {
+        color: $black;
+        text-decoration: none;
+        opacity: .75;
+    }
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+}

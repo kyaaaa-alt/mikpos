@@ -1,0 +1,300 @@
+/*---- Tags-----*/
+
+.tag {
+    font-size: 0.75rem;
+    color: $default-color;
+    background-color: $primary-01;
+    border-radius: 3px;
+    padding: 0 .5rem;
+    line-height: 2em;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    cursor: default;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.tag {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s color, .3s background;
+    &:hover {
+        background-color: rgba(110, 118, 135, 0.2);
+        color: inherit;
+    }
+}
+
+.tag-addon {
+    display: inline-block;
+    padding: 0 .5rem;
+    color: inherit;
+    text-decoration: none;
+    // background: #dee3ea;
+    margin: 0 -.5rem 0 .5rem;
+    text-align: center;
+    min-width: 1.5rem;
+    &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    i {
+        vertical-align: middle;
+        margin: 0 -.25rem;
+        line-height: 2;
+    }
+}
+
+a.tag-addon {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s color, .3s background;
+    &:hover {
+        background: #dee3ea;
+        color: inherit;
+    }
+}
+
+.tag-avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 3px 0 0 3px;
+    margin: 0 .5rem 0 -.5rem;
+}
+
+.tag-blue {
+    background-color: #467fcf !important;
+    color: $white;
+}
+
+.tag-indigo {
+    background-color: $indigo !important;
+    color: $white;
+}
+
+.tag-purple {
+    background-color: #867efc !important;
+    color: $white;
+}
+
+.tag-pink {
+    background-color: #ec82ef !important;
+    color: $white;
+}
+
+.tag-red {
+    background-color: #c21a1a !important;
+    color: $white;
+}
+
+.tag-orange {
+    background-color: $orange !important;
+    color: $white;
+}
+
+.tag-yellow {
+    background-color: #ecb403 !important;
+    color: $white;
+}
+
+.tag-green {
+    background-color: $green !important;
+    color: $white;
+}
+
+.tag-teal {
+    background-color: #2bcbba !important;
+    color: $white;
+}
+
+.tag-cyan {
+    background-color: #17a2b8 !important;
+    color: $white;
+}
+
+.tag-white {
+    background-color: $white;
+    color: $white;
+}
+
+.tag-gray {
+    background-color: #868e96 !important;
+    color: $white;
+}
+
+.tag-gray-dark {
+    background-color: $dark;
+    color: $white;
+}
+
+.tag-azure {
+    background-color: $azure !important;
+    color: $white;
+}
+
+.tag-lime {
+    background-color: $lime !important;
+    color: $white;
+}
+
+.tag-primary {
+    background-color: #467fcf;
+    color: $white;
+}
+
+.tag-primary {
+    background-color: $primary-1 !important;
+    color: #fff;
+}
+
+.tag-secondary {
+    background-color: #868e96;
+    color: $white;
+}
+
+.tag-success {
+    background-color: $green !important;
+    color: $white;
+}
+
+.tag-info {
+    background-color: $azure;
+    color: $white;
+}
+
+.tag-warning {
+    background-color: #ecb403 !important;
+    color: $white;
+}
+
+.tag-danger {
+    background-color: #c21a1a !important;
+    color: $white;
+}
+
+.tag-light {
+    background-color: #f8f9fa;
+    color: $white;
+}
+
+.tag-dark {
+    background-color: $dark;
+    color: $white;
+}
+
+.tag-rounded {
+    border-radius: 50px;
+    .tag-avatar {
+        border-radius: 50px;
+    }
+}
+
+.tags {
+    margin-bottom: -.5rem;
+    font-size: 0;
+    >.tag {
+        margin-bottom: .5rem;
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+}
+
+.tag-radius {
+    border-radius: 50px 0 0 50px
+}
+
+.tag-round::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: $white;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.tag-rounded.tag-icon i {
+    margin: 6px;
+}
+
+.tag-addon.tag-addon-cross {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.tag-outline-primary {
+    background-color: $primary-01 !important;
+    color: $primary-1;
+    border: 1px solid $primary-1;
+}
+
+.tag-outline-success {
+    background-color: rgba(0, 230, 130, 0.1) !important;
+    color: $success;
+    border: 1px solid $success;
+}
+
+.tag-outline-success::before {
+    border: 1px solid $success;
+}
+
+.tag-outline-primary::before {
+    border: 1px solid $primary-1;
+}
+
+.tag-outline-secondary {
+    background-color: rgba(5, 195, 251, 0.1) !important;
+    color: $secondary;
+    border: 1px solid $secondary;
+}
+
+.tag-outline-info {
+    background-color: #c7e0fd;
+    color: $info;
+    border: 1px solid $info;
+}
+
+.tag-outline-info::before {
+    border: 1px solid $info;
+}
+
+.tag-outline-secondary::before {
+    border: 1px solid $secondary;
+}
+
+.tag-outline-danger {
+    background-color: rgba(255, 56, 43, 0.1) !important;
+    color: $danger;
+    border: 1px solid $danger;
+}
+
+.tag-outline-danger::before {
+    border: 1px solid $danger;
+}
+
+.tag-outline-warning {
+    background-color: rgba(255, 162, 43, 0.1) !important;
+    color: $warning;
+    border: 1px solid $warning;
+}
+
+.tag-outline-warning::before {
+    border: 1px solid $warning;
+}
+
+.tag-outline-pink {
+    background-color: rgba(236, 130, 239, 0.2) !important;
+    color: #ec82ef;
+    border: 1px solid #ec82ef;
+}
+
+.tag-outline-pink::before {
+    border: 1px solid #ec82ef;
+}
+
+.tag-border {
+    border: 1px solid $border;
+    background-color: $white;
+}

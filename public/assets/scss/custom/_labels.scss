@@ -1,0 +1,35 @@
+.label {
+	display: inline-block;
+	margin-bottom: .5rem;
+	padding-right: .6em;
+	padding-left: .6em;
+}
+
+.labels li {
+	display: inline;
+}
+
+.label-default {
+	background: #d5e0ec;
+	color: $white;
+}
+
+.label-success {
+	background: $success;
+	color: $white;
+}
+
+.label-danger {
+	background: #f5334f;
+	color: $white;
+}
+
+.label-warning {
+	background: $warning;
+	color: $white;
+}
+
+.label-info {
+	background: $info;
+	color: $white;
+}

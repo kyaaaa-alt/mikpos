@@ -1,0 +1,96 @@
+button {
+    border-radius: 0;
+    &:focus {
+        outline: 0;
+    }
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+.btn-compose {
+    background: none repeat scroll 0 0 #ff6c60;
+    color: $white;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+    &:hover {
+        background: none repeat scroll 0 0 #f5675c;
+        color: $white;
+    }
+}
+
+.btn-send {
+    background: none repeat scroll 0 0 #00a8b3;
+    color: $white;
+    &:hover {
+        background: none repeat scroll 0 0 #00a8b3;
+        color: $white;
+        background: none repeat scroll 0 0 #009da7;
+    }
+}
+
+.fileinput-button {
+    background: none repeat scroll 0 0 #eeeeee;
+    border: 1px solid #e6e6e6;
+    float: left;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+    input {
+        cursor: pointer;
+        direction: ltr;
+        font-size: 23px;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-300px, 0px) scale(4);
+    }
+}
+
+button.btn-close {
+    right: 15px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    background-image: none;
+    &:focus {
+        box-shadow: none;
+    }
+}

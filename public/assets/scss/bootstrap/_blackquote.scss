@@ -1,0 +1,42 @@
+blockquote {
+	margin: 0 0 1rem;
+}
+.blockquote {
+	margin-bottom: 1rem;
+	font-size: 1.171875rem;
+}
+.blockquote-footer {
+	display: block;
+	font-size: 80%;
+	color: #868e96;
+	&::before {
+		content: "\2014 \00A0";
+	}
+}
+p, ul, ol {
+	margin-bottom: 1em;
+}
+blockquote {
+	margin-bottom: 1em;
+	font-style: italic;
+	color: $default-color;
+	padding-left: 2rem;
+	border-left: 2px solid $border;
+	font-style: inherit;
+	p {
+		margin-bottom: 1rem;
+		font-size: 16px;
+	}
+	cite {
+		&:before {
+			content: '— ';
+		}
+	}
+}
+.blockquote-reverse {
+    border-left: 0;
+    border-right: 2px solid $border;
+    text-align: right;
+	padding-right: 2rem;
+	padding-left: 0;
+}

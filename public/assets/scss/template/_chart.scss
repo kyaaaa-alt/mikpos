@@ -1,0 +1,263 @@
+/*------ Charts styles ------*/
+
+.chart-visitors {
+    min-height: 18rem;
+    overflow: hidden;
+}
+
+.chart-tasks {
+    height: 15rem;
+    overflow: hidden;
+}
+
+.chart-donut,
+.chart-pie {
+    height: 21rem;
+    overflow: hidden;
+}
+
+.chartsh {
+    height: 16rem;
+    overflow: hidden;
+    width:100%;
+}
+
+.chartwidget {
+    height: 17rem;
+    overflow: hidden;
+}
+
+.social {
+    i {
+        font-size: 40px;
+    }
+    .social-icon i {
+        font-size: 14px;
+        line-height: 2;
+    }
+}
+
+.instagram {
+    background: linear-gradient(to right bottom, #de497b 0%, #e1164f 100%);
+}
+
+.linkedin {
+    background-image: linear-gradient(to right bottom, #0d97de 0%, #13547a 100%);
+}
+
+.twitter {
+    background-image: linear-gradient(to right bottom, #00f2fe 0%, #1e63c3 100%);
+}
+
+.facebook {
+    background-image: linear-gradient(to right bottom, #3d6cbf 0%, #1e3c72 100%);
+}
+
+.map,
+.chart {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.map-square,
+.chart-square {
+    padding-top: 100%;
+}
+
+.map-content,
+.chart-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.map-header {
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    position: relative;
+    margin-bottom: -1.5rem;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 10rem;
+        background: linear-gradient(to bottom, rgba(245, 247, 251, 0) 5%, #f6f6fb 95%);
+        pointer-events: none;
+    }
+}
+
+.map-header-layer {
+    height: 100%;
+}
+
+.map-static {
+    height: 120px;
+    width: 100%;
+    max-width: 640px;
+    background-position: center center;
+    background-size: 640px 120px;
+}
+
+.chart-circle {
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+}
+
+.chart-circle canvas {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.chart-circle-sm {
+    height: 6rem !important;
+    width: 6rem !important;
+    font-size: 1rem;
+}
+
+.chart-circle-value {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 1;
+    small {
+        display: block;
+        color: #9aa0ac;
+        font-size: 0.9375rem;
+    }
+}
+
+.chart-circle-value-3 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 1;
+}
+
+
+/*----chart-drop-shadow----*/
+
+.chart-dropshadow {
+    -webkit-filter: drop-shadow((-6px) 12px 4px $black-1);
+    filter: drop-shadow((-6px) 12px 4px $black-1);
+}
+
+.chart-dropshadow-primary {
+    -webkit-filter: drop-shadow((-6px) 12px 4px rgba(133, 67, 246, 0.5));
+    filter: drop-shadow((-6px) 12px 4px rgba(133, 67, 246, 0.5));
+}
+
+.chart-dropshadow-primary-1 {
+    -webkit-filter: drop-shadow((-6px) 12px 4px rgba(133, 67, 246, 0.2));
+    filter: drop-shadow((-6px) 12px 4px rgba(133, 67, 246, 0.2));
+}
+
+.chart-dropshadow-danger {
+    -webkit-filter: drop-shadow((-6px) 12px 4px rgba(244, 88, 91, 0.5));
+    filter: drop-shadow(-6px 5px 4px rgba(244, 88, 91, 0.2));
+}
+
+.chart-dropshadow-warning {
+    -webkit-filter: drop-shadow(-6px 5px 4px rgba(247, 183, 49, 0.3));
+    filter: drop-shadow(-6px 5px 4px rgba(247, 183, 49, 0.3));
+}
+
+.BarChartShadow {
+    -webkit-filter: drop-shadow((-4px) 9px 4px $black-3);
+    filter: drop-shadow((-6px) 9px 4px $black-3);
+}
+
+#areaChart1,
+#areaChart2,
+#areaChart3,
+#areaChart4 {
+    height: 7rem !important;
+}
+
+#AreaChart5 {
+    width: 105% !important;
+    height: 163px !important;
+    bottom: -15px;
+    position: relative;
+    left: -7px;
+}
+
+
+/*----chart-drop-shadow----*/
+
+.chart-dropshadow2 {
+    -webkit-filter: drop-shadow((-6px) 5px 4px $black-2);
+    filter: drop-shadow((-6px) 5px 4px $black-2);
+}
+
+.chart-dropshadow-secondary {
+    -webkit-filter: drop-shadow(-6px 5px 4px rgba(130, 207, 242, 0.3));
+    filter: drop-shadow(-6px 5px 4px rgba(130, 207, 242, 0.3));
+}
+
+.chart-dropshadow-success {
+    -webkit-filter: drop-shadow((-6px) 5px 4px rgba(19, 191, 166, 0.2));
+    filter: drop-shadow((-6px) 5px 4px rgba(19, 191, 166, 0.2));
+}
+
+.chart-dropshadow-info {
+    -webkit-filter: drop-shadow((-6px) 5px 4px rgba(7, 116, 248, 0.2));
+    filter: drop-shadow((-6px) 5px 4px rgba(7, 116, 248, 0.2));
+}
+
+.z-index2 {
+    z-index: 2;
+}
+
+.legend li {
+    padding: 5px;
+    display: inline;
+}
+
+.circle-icon {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 13px;
+    float: right;
+}
+
+.square-icon {
+    height: 88px;
+    width: 81px;
+    position: absolute;
+    float: right;
+    border-radius: 7px 0px 0px 7px;
+    line-height: 7;
+}

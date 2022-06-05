@@ -1,0 +1,100 @@
+
+$background: #f0f0f5;
+$default-color:#282f53;
+$border: #e9edf4;
+
+/*Color variables*/
+
+$primary-1:var(--primary-bg-color);
+$primary-01:var(--primary01);
+$primary-02:var(--primary02);
+$primary-03:var(--primary03);
+$primary-06:var(--primary06);
+$primary-09:var(--primary09);
+$primary-005:var(--primary005);
+$primary-hover:var(--primary-bg-hover);
+$primary-border:var(--primary-bg-border);
+$primary-transparent:var(--primary-transparentcolor);
+$darkprimary-transparent:var(--darkprimary-transparentcolor);
+$transparentprimary-transparent:var(--transparentprimary-transparentcolor);
+$secondary:#05c3fb;
+$pink: #ec82ef;
+$teal:#1caf9f;
+$purple:#8927ec;
+$success:#09ad95;
+$warning:#f7b731;
+$danger:#e82646;
+$info:#1170e4;
+$orange:#fc7303;
+$red:#e73827;
+$lime:#7bd235;
+$dark:#343a40;
+$indigo:#6574cd;
+$cyan:#007ea7;
+$azure:#45aaf2;
+$white:#fff;
+$black:#000;
+$light:#f2f2f9;
+$gray:#5a6970;
+$green:#4ecc48;
+$blue:#3223f1;
+$yellow:#FBB034;
+
+/*Gradient variables*/
+
+$primary-gradient-1:linear-gradient(to bottom right, $primary-1 0%, #8e77fa 100%);
+$secondary-gradient:linear-gradient(to bottom right, #82cff2 0%, #28b7f9 100%);
+$warning-gradient:linear-gradient(to bottom right, #f66b4e 0%, #fbc434 100%);
+$info-gradient:linear-gradient(to bottom right, #1e63c3 0%, #00f2fe 100%);
+$danger-gradient:linear-gradient(to bottom right, #b51b35 0%, #fd4a68 100%);
+$success-gradient:linear-gradient(to bottom right, #1ea38f 0%, #5cf9e2 100%);
+
+/*white variables*/
+
+$white-1:rgba(255, 255, 255, 0.1);
+$white-2:rgba(255, 255, 255, 0.2);
+$white-3:rgba(255, 255, 255, 0.3);
+$white-4:rgba(255, 255, 255, 0.4);
+$white-5:rgba(255, 255, 255, 0.5);
+$white-6:rgba(255, 255, 255, 0.6);
+$white-7:rgba(255, 255, 255, 0.7);
+$white-8:rgba(255, 255, 255, 0.8);
+$white-9:rgba(255, 255, 255, 0.9);
+$white-05:rgba(255, 255, 255, 0.05);
+$white-08:rgba(255, 255, 255, 0.08);
+$white-75:rgba(255, 255, 255, 0.075);
+
+/*black variables*/
+
+$black-1:rgba(0, 0, 0, 0.1);
+$black-2:rgba(0, 0, 0, 0.2);
+$black-3:rgba(0, 0, 0, 0.3);
+$black-4:rgba(0, 0, 0, 0.4);
+$black-5:rgba(0, 0, 0, 0.5);
+$black-6:rgba(0, 0, 0, 0.6);
+$black-7:rgba(0, 0, 0, 0.7);
+$black-8:rgba(0, 0, 0, 0.8);
+$black-9:rgba(0, 0, 0, 0.9);
+$black-05:rgba(0, 0, 0, 0.05);
+
+/*shadow variables*/
+
+$shadow:0 5px 15px 5px rgba(80, 102, 224, 0.08);
+$dark-theme:#1e2448;
+$dark-theme2:#16192f;
+$dark-theme3:#181d3e;
+
+/*Dark Theme Variables*/
+
+$dark-body:#1a1a3c;
+$dark-theme-1:#2a2a4a;
+$text-color:#dedefd;
+$border-dark:rgba(255, 255, 255, 0.1);
+$dark-card-shadow:0 3px 9px 0 rgba(28, 28, 51, 0.15);
+
+/*Transparent variables*/
+
+$transparent-primary:$primary-1;
+$transparent-theme:rgba(0, 0, 0, 0.2);
+$transparent-body:var(--transparent-body);
+$transparent-border:rgba(255, 255, 255, 0.1);

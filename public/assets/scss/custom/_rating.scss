@@ -1,0 +1,46 @@
+/*-- rating--*/
+
+.rating-stars {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    i{
+        padding: 5px;
+    }
+    input {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0.375rem 0.75rem;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: #495057;
+        background-color: $white;
+        background-clip: padding-box;
+        border: 1px solid $border;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+}
+
+.star-ratings .stars {
+    width: 120px;
+    text-align: center;
+    margin: auto;
+}
+
+.star-ratings .stars-example-fontawesome-o {
+    width: 200px;
+}
+
+.box select {
+    width: 120px;
+    margin: 10px auto 0 auto;
+    display: block;
+    font-size: 16px;
+}
+
+.box .box-body {
+    padding-top: 2em;
+    height: 85px;
+    position: relative;
+}

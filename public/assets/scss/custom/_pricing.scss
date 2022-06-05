@@ -1,0 +1,235 @@
+/*-----Pricing tables-----*/
+
+.pricing {
+    color: $white;
+}
+
+.pricing {
+    .list-unstyled li {
+        border-bottom: 1px solid $white-1;
+        padding: 7px 0;
+    }
+}
+
+.table> {
+    tbody>tr>th {
+        font-weight: 500;
+        -webkit-transition: all .3s ease;
+    }
+    tfoot>tr> {
+        td,
+        th {
+            font-weight: 500;
+            -webkit-transition: all .3s ease;
+        }
+    }
+    thead>tr> {
+        td,
+        th {
+            font-weight: 500;
+            -webkit-transition: all .3s ease;
+        }
+    }
+}
+
+
+/*------ Pricing Styles ---------*/
+
+.panel.price {
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    >.panel-heading {
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+    }
+    h3 {
+        margin-bottom: 0;
+        padding: 20px 0;
+    }
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid $white-2;
+    background: $white;
+}
+
+.panel.price {
+    >.panel-heading {
+        color: $white;
+    }
+    .list-group-item {
+        &:last-child {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        &:first-child {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+    }
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 25px 0 rgba(168, 180, 208, .1);
+    border-radius: 7px;
+    background: $white;
+}
+
+.price {
+    .panel-footer {
+        border-bottom: 0px;
+        background-color: $white;
+        border-left: 0;
+        border-right: 0;
+    }
+    &.panel-color>.panel-body {
+        background-color: $white;
+    }
+}
+
+.product-price {
+    font-size: 1rem;
+    strong {
+        font-size: 1.5rem;
+    }
+}
+
+.pricing-divider-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.price-detail-wrap .rating-stars {
+    text-align: left !important;
+}
+
+.ribbon-price {
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+}
+
+.ribbon-price .badge {
+    float: right;
+    transform: rotate( 45deg);
+    right: -70px;
+    top: 21px;
+    position: relative;
+    text-align: center;
+    width: 212px;
+    font-size: 13px;
+    margin: 0;
+    padding: 7px 10px;
+    font-weight: 500;
+}
+.pricing.bg-primary-gradient {
+    border-radius: 0px 60px 0 60px;
+}
+
+.pricing.bg-warning-gradient {
+    border-radius: 0px 60px 0 60px;
+}
+
+.pricing.bg-success-gradient {
+    border-radius: 0px 60px 0 60px;
+}
+
+.pricing.bg-danger-gradient {
+    border-radius: 0px 60px 0 60px;
+}
+
+.price .panel-body .lead strong {
+    line-height: 2;
+    font-size: 30px;
+}
+
+.ribbone1-price .ribbon {
+    position: absolute;
+    right: 6px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbone1-price .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate( 45deg);
+    -webkit-transform: rotate( 45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: $primary-1;
+    box-shadow: 0 3px 10px -5px black;
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.ribbone1-price .ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid $primary-1;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid $primary-1;
+}
+
+.ribbone1-price .ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid $primary-1;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid $primary-1;
+}
+
+.price .list-group-flush .list-group-item {
+    border: 0 !important;
+    padding: 0px 0px 0px 16px;
+}
+
+.primary .pricing-divider {
+    padding: 1em 0 1em;
+    position: relative;
+}
+
+.secondary .pricing-divider {
+    background: $white;
+    padding: 1em 0 1em;
+    position: relative;
+}
+
+.danger .pricing-divider {
+    background: $white !important;
+    padding: 1em 0 1em;
+    position: relative;
+}
+
+.success .pricing-divider {
+    background: $white;
+    padding: 1em 0 1em;
+    position: relative;
+}

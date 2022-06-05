@@ -1,0 +1,328 @@
+
+.file-sm {
+    font-size: 12px;
+    padding: 4px 12px;
+}
+
+.file-md {
+    font-size: 15px;
+    padding: 4px 13px;
+}
+
+.file-lg {
+    font-size: 17px;
+    padding: 6px 15px;
+}
+
+.file-image img {
+    border-radius: 7px;
+}
+
+.file-image .icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    right: 22px;
+    top: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: -3px;
+    z-index: 1;
+    transition: all .5s ease 0s;
+    text-align: right;
+}
+
+.file-image .icons li {
+    display: block;
+    margin: 5px;
+}
+
+.file-image .icons .btn {
+    color: #fff;
+}
+
+.file-image .icons .btn {
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    margin: 2px 7px;
+    padding: 0;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    transition: all .3s ease-in-out;
+    min-width: inherit;
+}
+
+.file-image .icons .btn:after,
+.file-image .icons .btn:before {
+    content: attr(data-tip);
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 1px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -30px;
+}
+
+.file-image .icons .btn:after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+    transform: translateX(-50%) rotate( 45deg);
+    top: -20px;
+    z-index: -1;
+}
+
+.file-image:hover {
+    border-radius: 7px;
+}
+
+.file-image:hover .icons {
+    opacity: 1;
+    bottom: 33px;
+}
+
+.file-image .icons .btn:hover {
+    color: #fff;
+}
+
+.file-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.file-manager-image {
+    background: #e5bc4a40;
+    border-radius: 50px;
+    margin-bottom: 23px;
+    padding: 6px;
+    width: 75px;
+}
+
+.open-file {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.file-dropdown {
+    z-index: 2;
+}
+
+.tag-outline {
+    border: 1px solid #e8e8f7;
+    color: #1d212f;
+    background-color: transparent;
+}
+
+@media (max-width: 576px) {
+    .file-lg {
+        padding: 6px 4px;
+    }
+}
+
+.file-image-1{
+    width: 100px;
+    height: 100px;
+    display: inline-table;
+    margin: 4px;
+    position: relative;
+    border: 1px solid $border;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.file-image-1 .product-image img {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.file-image-1 .icons{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    right: 7px;
+    top: 6px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+    text-align: right;
+
+}
+.file-image-1:hover .icons {
+    opacity: 1;
+    bottom: 33px;
+}
+.file-image-1 .icons .btn {
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    margin: 4px 1px;
+    padding: 0;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    color: $white;
+    min-width: inherit;
+}
+.file-image-1 .file-name-1{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -22px;
+    color: #524d4d;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+//File image-2 styles
+
+.file-image-md{
+    width: 150px;
+    height: 150px;
+}
+.file-image-md .icons .btn {
+    font-size: 13px;
+    line-height: 30px;
+    height: 28px;
+    width: 28px;
+}
+
+//File image-2 styles
+
+.file-image-lg{
+    width: 200px;
+    height: 200px;
+}
+.file-image-lg .icons .btn {
+    font-size: 15px;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+}
+.card.pos-relative{
+    .card-body{
+        .bg-primary-transparent{
+            path{
+                fill: $primary-1;
+            }
+        }
+    }
+}
+
+
+
+.btn-group.file-attach .btn-close {
+    padding: 9px;
+    border-radius: 0px 4px 4px 0px;
+    opacity: 1;
+    font-weight: 300;
+    background-image: none;
+	&.btn-pill {
+		border-radius: 0px 50px 50px 0px ;
+	}
+	&.btn-outline-secondary {
+		border: 1px solid $secondary !important;
+		color: $secondary !important;
+	}
+	&.btn-outline-secondary:hover {
+		color: $white !important;
+	}
+	&.btn-outline-primary {
+		border: 1px solid $primary-1;
+		color: $primary-1;
+	}
+	&.btn-outline-primary:hover {
+		color: $white !important;
+		border-color: $primary-1 !important;
+	}
+	&.btn-outline-info {
+		border: 1px solid $azure !important;
+		color: $azure !important;
+	}
+	&.btn-outline-info:hover {
+		color: $white !important;
+	}
+	&.btn-outline-warning {
+
+		border: 1px solid $warning !important;
+		color: $warning !important;
+	}
+	&.btn-outline-warning:hover {
+		color: $white !important;
+	}
+	&.btn-outline-danger {
+		border: 1px solid $danger !important;
+		color: $danger !important;
+	}
+	&.btn-outline-danger:hover {
+		color: $white !important;
+	}
+	&.btn-outline-success {
+		border: 1px solid $success !important;
+		color: $success !important;
+	}
+	&.btn-outline-success:hover {
+		color: $white !important;
+	}
+}
+.btn-group.file-attach .btn-close.btn-lg {
+    padding: 10px;
+    background-image: none;
+    font-size: 31px;
+}
+.btn-group.file-attach .btn-close.btn-sm {
+    font-size: 1rem !important;
+    background-image: none;
+}
+.btn-group.file-attach .btn-sm {
+    font-size: 12px !important;
+}
+.btn-group.file-attach{
+    button.btn-close{
+        right: 0;
+    }
+	.btn-primary-light {
+		border: 0 !important;
+	}
+    .btn-pill.btn-close{
+        padding-left: 2px;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     .btn+.btn.btn-primary-light, .btn+.btn-group {
+        margin-left: 0px;
+    }
+}
+

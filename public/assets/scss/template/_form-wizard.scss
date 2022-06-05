@@ -1,0 +1,605 @@
+/*--- WIZARD ELEMENTS ---*/
+
+.wizard {
+    border: 1px solid $border;
+    background-color: $white;
+    > {
+        .steps {
+            padding: 20px;
+            > ul {
+                padding: 0;
+                margin-bottom: 0;
+                display: flex;
+                li {
+                    float: none;
+                    display: block;
+                    width: auto;
+                    .current-info {
+                        display: none;
+                    }
+                    .title {
+                        margin-left: 5px;
+                        white-space: nowrap;
+                        transition: all 0.2s ease-in-out;
+                        margin: 0;
+                        min-height: auto;
+                    }
+                    + li {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            a {
+                color: $primary-1;
+                font-weight: 500;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover,
+                &:active {
+                    color: $primary-1;
+                    font-weight: 500;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .number,
+                &:hover .number,
+                &:active .number {
+                    flex-shrink: 0;
+                    font-weight: 700;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+                        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                        "Noto Color Emoji";
+                    display: block;
+                    text-align: center;
+                    line-height: 2;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $primary-01;
+                    border-radius: 100%;
+                    transition: all 0.2s ease-in-out;
+                    margin-right: 5px;
+                }
+            }
+            .disabled a {
+                color: $primary-06;
+                &:hover,
+                &:active {
+                    color: $primary-06;
+                }
+            }
+            .current a {
+                color: $primary-1;
+                &:hover,
+                &:active {
+                    color: $primary-1;
+                }
+                .title,
+                &:hover .title,
+                &:active .title {
+                    display: inline-block;
+                }
+                .number,
+                &:hover .number,
+                &:active .number {
+                    background-color: $primary-1;
+                    color: $white;
+                }
+            }
+            .done a {
+                color: $success;
+                &:hover,
+                &:active {
+                    color: $success;
+                }
+                .title,
+                &:hover .title,
+                &:active .title {
+                    display: none;
+                }
+                .number,
+                &:hover .number,
+                &:active .number {
+                    background-color: $success;
+                    color: $white;
+                }
+            }
+        }
+        .content {
+            border-top: 1px solid $border;
+            border-bottom: 1px solid $border;
+            min-height: 150px;
+            padding: 20px;
+            > {
+                .title {
+                    font-size: 18px;
+                    color: $default-color;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+                    display: none;
+                    margin: 0;
+                    &.current {
+                        display: block;
+                    }
+                }
+                .body {
+                    float: none;
+                    position: static;
+                    width: auto;
+                    height: auto;
+                    input.parsley-error {
+                        border-color: #ff5c77;
+                        + ul {
+                            list-style: none !important;
+                        }
+                    }
+                }
+            }
+        }
+        .actions {
+            padding: 20px;
+            > ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                > li:last-child a {
+                    background-color: $success;
+                }
+            }
+            a {
+                display: block;
+                background-color: $primary-1;
+                padding: 9px 25px;
+                line-height: 1.573;
+                color: $white;
+                border-radius: 4px;
+                font-weight: 500;
+                &:hover,
+                &:active {
+                    display: block;
+                    background-color: $primary-1;
+                    padding: 9px 25px;
+                    line-height: 1.573;
+                    color: $white;
+                    border-radius: 4px;
+                    font-weight: 500;
+                }
+            }
+            .disabled a {
+                background-color: #e8ebf2;
+                color: $default-color;
+                &:hover,
+                &:active {
+                    background-color: #e8ebf2;
+                    color: $default-color;
+                }
+            }
+        }
+    }
+    &.vertical > {
+        .steps {
+            padding: 20px;
+            ul li {
+                + li {
+                    margin-left: 10px;
+                }
+                .title {
+                    display: none;
+                }
+            }
+            .current a .title {
+                display: inline-block;
+            }
+        }
+        .content {
+            margin: 0;
+            padding: 20px;
+        }
+        .actions {
+            padding: 20px;
+            ul {
+                float: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard > .steps {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard > .steps {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wizard > .steps > ul li .title {
+        transition: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard > .steps > ul li .title {
+        display: none;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard > .steps > ul li .title {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard > .steps > ul li + li {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard > .steps > ul li + li {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wizard > .steps a {
+        justify-content: flex-start;
+        &:hover,
+        &:active {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wizard > .steps a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            transition: none;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard > .steps a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 2.2;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard > .steps .disabled {
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .wizard > .steps > ul li .title {
+        display: none;
+    }
+}
+
+// @media (max-width: 991px) {
+//     .wizard>.steps .disabled {
+//         display: none;
+//     }
+// }
+
+@media (min-width: 768px) {
+    .wizard > .steps .done a {
+        .title,
+        &:hover .title,
+        &:active .title {
+            display: inline-block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard > .content {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard > .content {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard > .actions {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard > .actions {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .steps {
+        float: left;
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard.vertical > .steps {
+        width: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .steps {
+        padding: 20px;
+        width: 35%;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .steps ul {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .steps ul li + li {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard.vertical > .steps ul li + li {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .steps ul li .title {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .steps a {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .steps .current a .title {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .steps .current a .title {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .content {
+        border-top-width: 0;
+        border-bottom-width: 0;
+        width: 80%;
+        float: right;
+        border-left: 1px solid $border;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard.vertical > .content {
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .content {
+        width: 65%;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 576px) {
+    .wizard.vertical > .actions {
+        width: 80%;
+        float: right;
+        border-left: 1px solid $border;
+    }
+}
+
+@media (min-width: 768px) {
+    .wizard.vertical > .actions {
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wizard.vertical > .actions {
+        width: 65%;
+        padding: 25px;
+    }
+}
+
+/****** EQUAL COLUMN WIDTH STEP INDICATOR *****/
+
+.step-equal-width > .steps > ul {
+    display: flex;
+    > li {
+        flex: 1;
+        width: auto;
+        float: none;
+        flex: 1;
+        width: auto;
+        float: none;
+    }
+    display: flex;
+}
+
+/****** EQUAL COLUMN WIDTH STEP INDICATOR *****/
+
+/***** CUSTOM STYLES *****/
+
+.wizard-style-1 > .steps > ul {
+    a {
+        padding: 0;
+        height: 50px;
+        &:hover,
+        &:active {
+            padding: 0;
+            height: 50px;
+        }
+        .number,
+        &:hover .number,
+        &:active .number {
+            width: 50px;
+            height: 100%;
+            border: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #737688;
+            background-color: #f3f7fd;
+            border-radius: 0;
+        }
+        .title,
+        &:hover .title,
+        &:active .title {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    .current a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            background-color: $primary-1;
+            color: $white;
+        }
+    }
+    .done a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            background-color: #643ab0;
+            color: $white;
+        }
+    }
+}
+
+.wizard-style-2 > .steps > ul {
+    a {
+        padding: 0;
+        height: 50px;
+        border-radius: 50px;
+        &:hover,
+        &:active {
+            padding: 0;
+            height: 50px;
+            border-radius: 50px;
+        }
+        .number,
+        &:hover .number,
+        &:active .number {
+            width: 50px;
+            height: 100%;
+            border: 2px solid #f3f7fd;
+            font-size: 18px;
+            font-weight: bold;
+            color: #737688;
+            background-color: $white;
+        }
+        .title,
+        &:hover .title,
+        &:active .title {
+            margin-right: 20px;
+        }
+    }
+    .current a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            border-color: $primary-1;
+            color: $primary-1;
+        }
+    }
+    .done a {
+        .number,
+        &:hover .number,
+        &:active .number {
+            border-color: #8c3feb;
+            color: #8c3feb;
+        }
+    }
+}
+
+/*--- WIZARD ELEMENTS ---*/
+
+.wizard-card .moving-tab {
+    margin-top: 5px;
+    background-color: $primary-1 !important;
+}
+
+.form-group label.control-label {
+    color: $primary-1;
+}
+
+.wizard-card.form-group .form-control {
+    background-image: linear-gradient(#c4c4c4, #c4c4c4, linear-gradient(#e1e1e2, #e1e1e2));
+}
+
+.wizard-container .wizard-navigation {
+    background: #ebeff8;
+}
+
+.wizard-card .choice {
+    &:hover .icon,
+    &.active .icon {
+        border-color: $primary-1 !important;
+        color: $primary-1 !important;
+    }
+}
+
+@media (max-width: 1279px) and (min-width: 992px) {
+    #smartwizard-3 .nav-tabs .nav-link {
+        padding: 1rem 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .wizard > .steps .current a .title,
+    .wizard > .steps .current a:hover .title,
+    .wizard > .steps .current a:active .title {
+        display: none;
+    }
+    .wizard > .steps > ul li .title {
+        display: none;
+    }
+    .wizard.vertical>.steps ul li .title {
+        display: none !important;
+    }
+}

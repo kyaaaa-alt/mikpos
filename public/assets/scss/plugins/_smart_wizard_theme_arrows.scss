@@ -1,0 +1,228 @@
+/*!
+ * SmartWizard v4.3.x
+ * jQuery Wizard Plugin
+ * http://www.techlaboratory.net/smartwizard
+ *
+ * Created by Dipu Raj
+ * http://dipuraj.me
+ *
+ * Licensed under the terms of MIT License
+ * https://github.com/techlab/SmartWizard/blob/master/LICENSE
+ */
+
+/* SmartWizard Theme: Arrows */
+
+.sw-theme-arrows {
+    border-radius: 5px;
+    border: 1px solid #eff0f6;
+
+    > .sw-container {
+        min-height: 200px;
+    }
+
+    .step-content {
+        padding: 15px;
+        border: 0px solid #eff0f6;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    .sw-toolbar {
+        padding: 10px;
+        margin-bottom: 0 !important;
+    }
+
+    > {
+        ul.step-anchor {
+            border: 0;
+            border-bottom: 1px solid #eff0f6;
+            padding: 0px;
+            background: #fff;
+            border-radius: 0;
+            border-top-right-radius: 5px;
+            list-style: none;
+            overflow: hidden;
+
+            li + li:before {
+                padding: 0;
+            }
+
+            > li {
+                > a {
+                    color: #5c6287;
+                    text-decoration: none;
+                    padding: 10px 0 10px 45px;
+                    position: relative;
+                    display: block;
+                    border: 0 !important;
+                    border-radius: 0;
+                    outline-style: none;
+                    background: #f4f5f5;
+
+                    &:hover {
+                        color: #5c6287;
+                        text-decoration: none;
+                        padding: 10px 0 10px 45px;
+                        position: relative;
+                        display: block;
+                        border: 0 !important;
+                        border-radius: 0;
+                        outline-style: none;
+                        background: #f4f5f5;
+                    }
+
+                    &:after {
+                        content: " ";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border-top: 50px solid transparent;
+                        border-bottom: 50px solid transparent;
+                        border-left: 30px solid #f4f5f5;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -50px;
+                        left: 100%;
+                        z-index: 2;
+                    }
+
+                    &:before {
+                        content: " ";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border-top: 50px solid transparent;
+
+                        /* Go big on the size, and let overflow hide */
+                        border-bottom: 50px solid transparent;
+                        border-left: 30px solid #dbdef1;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -50px;
+                        margin-left: 1px;
+                        left: 100%;
+                        z-index: 1;
+                    }
+                }
+
+                &:first-child > a {
+                    padding-left: 15px;
+                }
+
+                > a {
+                    &:hover {
+                        color: #5c6287;
+                        text-decoration: none;
+                        outline-style: none;
+                        background: #f4f5f5;
+                        border-color: #f4f5f5;
+
+                        &:after {
+                            border-left-color: #f4f5f5;
+                        }
+                    }
+                }
+
+                &.clickable > a:hover {
+                    color: #4285f4 !important;
+                    background: #46b8da !important;
+                }
+
+                &.active > a {
+                    border-color: #7673e6 !important;
+                    color: #fff !important;
+                    background: #7673e6 !important;
+
+                    &:after {
+                        border-left: 30px solid #7673e6 !important;
+                    }
+                }
+
+                &.done > a {
+                    border-color: #f4f5f5 !important;
+
+                    /*  #7673e6*/
+                    color: #5c6287 !important;
+                    background: #f4f5f5 !important;
+
+                    &:after {
+                        border-left: 30px solid #f4f5f5;
+
+                        /* c3e6cb */
+                    }
+                }
+
+                &.danger > a {
+                    border-color: #d9534f !important;
+                    color: #fff !important;
+                    background: #d9534f !important;
+
+                    &:after {
+                        border-left: 30px solid #d9534f !important;
+                    }
+                }
+
+                &.disabled > a {
+                    color: #eee !important;
+
+                    &:hover {
+                        color: #eee !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &::before {
+        border: 10px solid #f3f3f3;
+        border-top: 10px solid #7673e6;
+    }
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .sw-theme-arrows > {
+        ul.step-anchor {
+            border: 0;
+            background: #fff !important;
+        }
+
+        .nav-tabs > li {
+            float: none !important;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sw-theme-arrows > {
+        ul.step-anchor {
+            border: 0;
+            background: #eff0f6 !important;
+        }
+
+        .nav-tabs > li {
+            float: none !important;
+            margin-bottom: 0;
+        }
+
+        ul.step-anchor > li > a {
+            padding-left: 15px;
+            margin-right: 0;
+            margin-bottom: 1px;
+
+            &:hover {
+                padding-left: 15px;
+                margin-right: 0;
+                margin-bottom: 1px;
+            }
+
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Loader Custom Style */

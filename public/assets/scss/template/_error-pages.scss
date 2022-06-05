@@ -1,0 +1,36 @@
+.container-login100 .box {
+    .social-icons {
+        position: relative;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            float: left;
+            padding: 7px 7px;
+            a {
+                margin: 0 10px;
+                font-size: 20px;
+                transition: 0.5s;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.relative {
+    position: relative !important;
+}
+
+.construction .btn.btn-icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    background: $white-08;
+    font-size: 20px;
+    color: $white;
+    margin: 0 3px;
+    border-radius: 50px;
+}

@@ -1,0 +1,138 @@
+.footer {
+    background: transparent;
+    font-size: 0.875rem;
+    padding: 1.25rem 1.25rem;
+    border-top: 1px solid $black-1;
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .social {
+        ul li {
+            float: left;
+            padding: 7px;
+            a {
+                width: 29px;
+                height: 29px;
+                display: block;
+                border: 1px solid $primary-1;
+                line-height: 25px;
+                border-radius: 50%;
+                background: $primary-01;
+                color: $primary-1;
+            }
+        }
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    .footer {
+        display: none;
+    }
+}
+
+.footer-1.footer {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.top-footer {
+    width: 100%;
+    line-height: 1.25rem;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    font-size: 14px;
+    flex: 0 0 auto;
+    h6 {
+        font-size: 14px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    p {
+        color: #76839a;
+    }
+    a {
+        color: #76839a;
+        line-height: 2;
+        address {
+            color: #76839a;
+            margin-bottom: 0;
+            line-height: 2;
+        }
+    }
+    img {
+        width: 80px;
+        padding: 2px;
+        height: 80px;
+        border-radius: 5px;
+        &:hover {
+            color: #8e9090;
+            opacity: .6;
+        }
+    }
+    .list-unstyled li {
+        border-bottom: 0;
+    }
+}
+
+.footer-payments {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    line-height: 1.25rem;
+    li {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        display: inline-block;
+    }
+    a {
+        color: #a7a8c7;
+        text-decoration: none;
+        font-size: 2rem;
+        &:hover {
+            opacity: .9;
+        }
+    }
+}
+
+.main-footer {
+    padding: 20px 30px 20px 280px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: $white;
+    border-top: 1px solid #e6eaea;
+}
+
+.footer-social-list {
+    li {
+        &:not(:last-child) {
+            margin-right: 0.7rem;
+        }
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    line-height: 1.25rem;
+}
+
+@media (max-width: 992px) {
+    .footer-social-list {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .footer1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        padding: 1.25rem 0;
+    }
+}

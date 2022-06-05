@@ -1,0 +1,107 @@
+/*------ Accordion -------*/
+
+.accordion .card {
+    &:not(:first-of-type) {
+        &:not(:last-of-type) {
+            border-bottom: 0;
+            border-radius: 0;
+        }
+        .card-header:first-child {
+            border-radius: 0;
+        }
+    }
+    &:first-of-type {
+        border-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &:last-of-type {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.accordionjs .acc_section .acc_head h3 {
+    &:before {
+        color: #76839a;
+    }
+    font-weight: 400 !important;
+}
+
+
+/* #accordion rotate icon option */
+
+#accordion .panel-heading1 {
+    a:before {
+        content: "\f01a";
+        font-size: 24px;
+        position: absolute;
+        font-family: 'FontAwesome';
+        right: 5px;
+        top: 10px;
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+    &.active a:before {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+}
+
+.accordionjs .acc_section.acc_active>.acc_head {
+    color: $white!important;
+}
+
+.accordion-wizard .badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 0;
+}
+
+.accordion-item {
+    border: 1px solid $border;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: $border;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $primary-1;
+    box-shadow: none;
+    background: #f6f6fb;
+}
+
+.accordion-button.collapsed {
+    background: transparent;
+    box-shadow: none;
+}
+
+.accordion-button {
+    font-size: 14px;
+    padding: 15px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    margin-right: 5px;
+}
+
+.accordion-button::after {
+    background-image: none;
+    content: "\e92d";
+    font-family: feather!important;
+}
+
+#accordion .panel-default>.panel-heading {
+    border: 0px solid $border;
+}
+
+#accordion .panel-default .collapsing .panel-body {
+    border-top: 0px solid transparent;
+}
+
+.accordion-button::after {
+    height: 14px;
+}

@@ -1,0 +1,92 @@
+.accordionjs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .acc_section {
+        border: 1px solid #eee;
+        position: relative;
+        z-index: 1;
+        margin-top: -1px;
+        overflow: hidden;
+
+        .acc_head {
+            position: relative;
+            background: #fff;
+            padding: 10px;
+            display: block;
+            cursor: pointer;
+
+            h3 {
+                line-height: 1;
+                margin: 5px;
+                font-size: 14px;
+                padding-left: 25px;
+                font-weight: 200;
+            }
+        }
+
+        .acc_content {
+            padding: 10px;
+        }
+
+        &:first-of-type {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            .acc_head {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+
+        &:last-of-type {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            .acc_content {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+
+        &.acc_active {
+            > {
+                .acc_content {
+                    display: block;
+                }
+
+                .acc_head {
+                    border-bottom: 1px solid #eee;
+                    color: #fff;
+                }
+            }
+
+            .acc_head h3:before {
+                content: "\e995";
+                position: absolute;
+                font-family: "feather" !important;
+                left: 13px;
+                color: #fff;
+                top: 14px;
+                font-size: 15px;
+                transition: all 0.5s;
+                transform: scale(1);
+            }
+        }
+
+        .acc_head h3:before {
+            content: "\e9b0";
+            position: absolute;
+            font-family: "feather" !important;
+            left: 12px;
+            top: 14px;
+            font-size: 15px;
+            transition: all 0.5s;
+            transform: scale(1);
+        }
+    }
+}

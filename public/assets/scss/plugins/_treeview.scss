@@ -1,0 +1,209 @@
+.tree {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-left: 1em;
+        position: relative;
+
+        ul {
+            margin-left: 1em;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -10px;
+        }
+    }
+
+    li {
+        margin: 0;
+
+        /* padding: 0em 1em 0em 0em; */
+        line-height: 2em;
+        color: #9eabc0;
+        position: relative;
+
+        /* border: 1px solid $border;
+      margin: 10px 0;
+      border-radius: 5px;
+      line-height: 30px; */
+
+        i {
+            margin-right: 10px;
+            font-weight: bold;
+
+            /* font-size: 16px; */
+            /* padding-top: 10px; */
+            line-height: 1;
+        }
+    }
+
+    ul li {
+        &:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 0;
+            margin-top: -1px;
+            position: absolute;
+            top: 13px;
+            left: -10px;
+        }
+
+        &:last-child:before {
+            background: transparent;
+            height: auto;
+            top: 14px;
+            bottom: 0;
+        }
+    }
+}
+
+.indicator {
+    margin-right: 5px;
+    color: #4b10a4;
+}
+
+.tree {
+    li {
+        a {
+            text-decoration: none;
+            color: #74829c;
+            font-size: 15px;
+        }
+
+        button {
+            text-decoration: none;
+            color: #29273c;
+            border: none;
+            background: transparent;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            outline: 0;
+
+            &:active,
+            &:focus {
+                text-decoration: none;
+                color: #29273c;
+                border: none;
+                background: transparent;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                outline: 0;
+            }
+        }
+
+        &.branch {
+            /* background: #f6f6fb; */
+
+            li {
+                /* background: #fff; */
+            }
+        }
+    }
+
+    ul {
+        &:before {
+            border-left: 1px dotted #9eabc0;
+        }
+
+        li:before {
+            border-top: 1px dotted #9eabc0;
+        }
+    }
+}
+
+/* Treeview checked */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#page-wrap {
+    margin: auto 0;
+}
+
+.treeview {
+    margin: 10px 0 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.treeview {
+    li {
+        background: url(http://jquery.bassistance.de/treeview/images/treeview-default-line.gif) 0 0 no-repeat;
+        padding: 2px 0 2px 16px;
+
+        &.last {
+            background-position: 0 -1766px;
+        }
+
+        > {
+            input {
+                height: 16px;
+                width: 16px;
+
+                /* hide the inputs but keep them in the layout with events (use opacity) */
+                opacity: 0;
+                filter: alpha(opacity = 0);
+
+                /* internet explorer */
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+
+                /*IE8*/
+            }
+
+            label {
+                background: url(https://www.thecssninja.com/demo/css_custom-forms/gr_custom-inputs.png) 0 -1px no-repeat;
+
+                /* move left to cover the original checkbox area */
+                margin-left: -20px;
+
+                /* pad the text to make room for image */
+                padding-left: 20px;
+            }
+        }
+    }
+
+    > li:first-child > label {
+        /* style for the root element - IE8 supports :first-child
+  but not :last-child ..... */
+    }
+
+    .custom-unchecked {
+        background-position: 0 -1px;
+
+        &:hover {
+            background-position: 0 -21px;
+        }
+    }
+
+    .custom-checked {
+        background-position: 0 -81px;
+
+        &:hover {
+            background-position: 0 -101px;
+        }
+    }
+
+    .custom-indeterminate {
+        background-position: 0 -141px;
+
+        &:hover {
+            background-position: 0 -121px;
+        }
+    }
+}

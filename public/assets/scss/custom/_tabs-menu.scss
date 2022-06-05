@@ -1,0 +1,97 @@
+.tab-content> {
+    .tab-pane {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+}
+
+.tabs-menu ul li {
+    a {
+        padding: 10px 12px 11px 13px;
+        display: block;
+        color: $default-color;
+    }
+    .active {
+        color: $primary-1;
+    }
+}
+
+.tabs-menu1 ul li a {
+    padding: 10px 20px 11px 20px;
+    display: block;
+    color: $default-color;
+}
+
+.tabs-menu-body {
+    // border: 1px solid $border;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.tab-menu-heading {
+    padding: 0px;
+    border-bottom: 1px solid $border !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tab_wrapper .content_wrapper .tab_content.active p:last-child {
+    margin-bottom: 0;
+}
+
+.tabs-menu2 ul li {
+    a {
+        color: #636262;
+        padding: 10px 20px 11px 20px;
+    }
+    .active {
+        font-weight: 600;
+    }
+    .fade {
+        color: #eeee;
+    }
+}
+
+.search-tabs ul li a.active {
+    border-bottom: 3px solid $primary-1;
+    background-color: transparent !important;
+    // border-radius: 0 !important;
+}
+
+.search-tabs ul li a:hover {
+    background-color: transparent !important;
+    // border-radius: 0 !important;
+}
+
+.tabs-menu-border ul li .active {
+    border: 1px solid $border;
+}
+
+.tabs-menu-boxed ul li a {
+    padding: 10px 20px 11px 20px;
+    display: block;
+    color: $default-color;
+    border-bottom: 1px solid $border;
+}
+
+.tabs-menu-boxed ul li .active {
+    border: 1px solid $border;
+    border-bottom-color: transparent;
+}
+
+.tab-menu-heading .tabs-menu-boxed {
+    border-bottom: 0;
+}
+
+.tab-menu-heading.tab-menu-heading-boxed {
+    border-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .tabs-menu-boxed ul li a {
+        padding: 6px 10px 6px 9px;
+    }
+}

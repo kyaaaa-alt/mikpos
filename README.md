@@ -7,7 +7,7 @@ MIKPOS is a management users and payments that can be used in HotSpot and PPP Mi
 
 #### CSS
 
-1. [Bootstrap v5](https://getbootstrap.com/) - Together with their [icons v1.7.0](https://icons.getbootstrap.com/)
+1. [Bootstrap v5](https://getbootstrap.com/) - CSS Framework
 2. [FontAwesome 4](https://fontawesome.com/v4/icons/) - The complete set of 675 icons.
 
 #### JS

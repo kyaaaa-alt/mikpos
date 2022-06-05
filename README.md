@@ -41,7 +41,7 @@ MIKPOS is a management users and payments that can be used in HotSpot and PPP Mi
 * MySQL via the MySQLi driver (version 5.1 and above only)
 
 ## Setup
-
+Create database 'mikposdb' without quote, then
 Copy `.env.examples` to `.env` and set the database settings.
 Uncomment '#' and set database line settings below :
 

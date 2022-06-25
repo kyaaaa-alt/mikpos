@@ -14,7 +14,6 @@
                 <h3 class="card-title"><i class="fa fa-bookmark-o"></i> Payment Page</h3>
             </div>
             <div class="card-body">
-                
                 <div class="mb-3 row">
                     <label for="urlcallback" class="col-sm-4 col-form-label">Landing Page</label>
                     <div class="col-sm-8">
@@ -39,48 +38,6 @@
                 Tambahkan script berikut ke MikroTik Anda.<br/><br/>
                 /ip hotspot walled-garden ip add action=accept comment="Mikpos" disabled=no dst-host=mikpos.space<br/>
                 /ip hotspot walled-garden ip add action=accept comment="Mikpos" disabled=no dst-host=tripay.co.id
-                <!-- <div class="mb-3 row">
-                    <label for="urlcallback" class="col-sm-4 col-form-label">Check Status Voucher</label>
-                    <div class="col-sm-8">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="statusvoucher" name="statusvoucher" value="<?= base_url('chkstatus') . '/' . $userid . '/' . $routerid ?>">
-                            <button class="btn btn-outline-secondary" type="button" id="statusvoucherbtn" onclick="copystatusvoucher()"><i class="fa fa-clone"></i> Salin</button>
-                            <a target="_blank" class="btn btn-outline-secondary" href="<?= base_url('chkstatus') . '/' . $userid . '/' . $routerid ?>">Open</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="urlcallback" class="col-sm-4 col-form-label">Beli / Perpanjang Voucher</label>
-                    <div class="col-sm-8">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="payvoucher" name="payvoucher" value="<?= base_url('voucher') . '/' . $userid . '/' . $routerid ?>">
-                            <button class="btn btn-outline-secondary" type="button" id="payvoucherbtn" onclick="copypayvoucher()"><i class="fa fa-clone"></i> Salin</button>
-                            <a target="_blank" class="btn btn-outline-secondary" href="<?= base_url('voucher') . '/' . $userid . '/' . $routerid ?>">Open</a>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="mb-3 row">
-                    <label for="urlcallback" class="col-sm-4 col-form-label">Check Status Member PPPoE</label>
-                    <div class="col-sm-8">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="statusppp" name="statusppp" value="<?= base_url('chkvalidity') . '/' . $userid . '/' . $routerid ?>">
-                            <button class="btn btn-outline-secondary" type="button" id="statuspppbtn" onclick="copystatusppp()"><i class="fa fa-clone"></i> Salin</button>
-                            <a target="_blank" class="btn btn-outline-secondary" href="<?= base_url('chkvalidity') . '/' . $userid . '/' . $routerid ?>">Open</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="urlcallback" class="col-sm-4 col-form-label">Perpanjang Member PPPoE</label>
-                    <div class="col-sm-8">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="payppp" name="payppp" value="<?= base_url('payment') . '/' . $userid . '/' . $routerid ?>">
-                            <button class="btn btn-outline-secondary" type="button" id="paypppbtn" onclick="copypayppp()"><i class="fa fa-clone"></i> Salin</button>
-                            <a target="_blank" class="btn btn-outline-secondary" href="<?= base_url('payment') . '/' . $userid . '/' . $routerid ?>">Open</a>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
 
         </div>

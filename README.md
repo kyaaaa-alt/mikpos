@@ -5,7 +5,8 @@ MIKPOS is a management users and payments that can be used in HotSpot and PPP Mi
 
 # Donate
 QRIS & VIRTUAL ACCOUNT (Indonesia Only)
-[!["Buy Me A Coffee"](https://nauf.space/orange_img.webp)](https://nauf.space/donate){:target="_blank"}
+
+[!["Buy Me A Coffee"](https://nauf.space/orange_img.webp)](https://nauf.space/donate)
 
 ### FRONTEND
 

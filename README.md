@@ -3,7 +3,7 @@
 MIKPOS is a management users and payments that can be used in HotSpot and PPP MikroTik RouterOS users.
 (RouterOS API Based, NOT RADIUS!)
 
-# Donate
+## Donate
 QRIS & VIRTUAL ACCOUNT (Indonesia Only)
 
 [!["Buy Me A Coffee"](https://nauf.space/orange_img.webp)](https://nauf.space/donate)
